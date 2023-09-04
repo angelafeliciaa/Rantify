@@ -1,0 +1,58 @@
+.container {
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background-color: #5C4033;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  margin: 10px;
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 350px;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+  font-family: 'Caprasimo', cursive;
+  color: #EADACB;
+  margin: 20px;
+  text-align: center;
+}
+
+p {
+  margin: 20px;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+}
+
+button {
+  height: 40px;
+  font-family: 'Indie Flower', cursive;
+  margin: 10px;
+}
+
+.buttonAlignment {
+  display: flex;
+  justify-content: center;
+}
+
+.largeImage {
+  font-size: 70px;
+}
+
+i {
+  color: #EADACB;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RantEntries</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Caprasimo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <!-- Indie Flower Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/0a1c361bc3.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  body {
+    background-color: #EADACB;
+    height: 100vh;
+  }
+
+  #journal {
+    height: 200px;
+    width: 400px;
+    resize: none;
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
+  }
+
+  #reflection {
+    height: 200px;
+    width: 400px;
+    resize: none;
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
+  }
+
+  #summary {
+    height: 100px;
+    width: 400px;
+    resize: none;
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
+  }
+
+  h1 {
+    color: #5C4033;
+    margin: 10px;
+  }
+
+  .question {
+    font-family: 'Indie Flower', cursive;
+    color: #5C4033;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #table-container {
+    width: 800px;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  td {
+    word-wrap: break-word;
+  }
+
+  .delete-button {
+    color: #5C4033;
+    cursor: pointer;
+  }
+</style>
+
+<body>
+  <h1> Past Entries </h1>
+  <br>
+
+  <p class="question">your past journal entries</p>
+
+  <div id="table-container">
+    <script>
+      var logged = localStorage.getItem('logged');
+      if (!logged) {
+        window.location.href = 'login.html';
+      }
+    </script>
+  </div>
+  <div>
+    <button type="button" onclick="openRantify()" class="question" style="margin: 10px;">submit a new entry</button>
+    <button type="button" onclick="openThankYouPage()" class="question" style="margin: 10px;">log out</button>
+  </div>
+  <br>
+</body>
+
+<script src="rantEntries.js"></script>
+
+</html>

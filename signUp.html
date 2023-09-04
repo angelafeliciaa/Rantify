@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SignUp</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Caprasimo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <!-- Indie Flower Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  button{
+    color: #5C4033;
+    background-color: #EADACB;
+  }
+</style>
+
+<body style="height: 100vh">
+  <h1 style="margin: 10px"> Sign Up Page </h1>
+</body>
+
+<form id="signupForm">
+  <!-- Input fields for signup -->
+  <input type="text" id="signupUsername" placeholder="Username">
+  <p style="margin: 10px"> *Username must have at least THREE characters </p>
+  <input type="password" id="signupPassword" placeholder="Password">
+  <p style="margin: 10px"> *Password must have at least SIX characters, <br> ONE number, ONE lowercase letter <br> and ONE uppercase letter </p>
+  <input type="password" id="signupConfirmPassword" placeholder="Confirm Password">
+
+  <div class="buttonAlignment">
+    <button type="button" onclick="openWelcomePage()" style="background-color: white;"> Back
+    </button>
+    <button type="button" class="view" onclick="showPasswordSignUp()" style="background-color: #ffffd3;"> Show Password
+    </button>
+    <button type="button" style="background-color: lightgreen;" onclick="signUp()">Sign Up</button>
+  </div>
+
+</form>
+
+<script src="userRegistration.js"></script>
+
+</html>
